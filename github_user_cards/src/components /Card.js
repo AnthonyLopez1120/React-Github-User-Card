@@ -17,15 +17,15 @@ function GitCard (props){
         <CardDiv className = "card">
             <img src = {user.avatar_url} alt = "profile pic"/>
             <div>
-                <p>Name: {user.name}</p>
-                <p>Github Handle: {user.login}</p>
+                <p><span>Name:</span> {user.name}</p>
+                <p><span>Github Handle:</span> {user.login}</p>
                 <p>{user.html_user}</p>
-                <p>Location: {user.location}</p>
-                <p>Bio: {user.bio}</p>
+                <p><span>Location:</span> {user.location}</p>
+                <p><span>Bio:</span> {user.bio}</p>
             </div>
             <div>
-                <p>Followers: {user.followers}</p>
-                <p>Following: {user.following}</p>
+                <p><span>Followers:</span> {user.followers}</p>
+                <p><span>Following:</span> {user.following}</p>
             </div>
         </CardDiv>
     )
