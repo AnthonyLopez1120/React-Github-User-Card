@@ -1,6 +1,12 @@
 import React from 'react';
 import axios from "axios"
 import CardData from "./components /CardData"
+import styled from "styled-components"
+
+const HeaderOne = styled.h1`
+  text-align:center
+`
+
 
 
 
@@ -49,7 +55,7 @@ class App extends React.Component{
   render(){
   return (
    <>
-   <h1>{this.state.user}</h1>
+   <HeaderOne>Anthony's Github Cult</HeaderOne>
    <CardData users = {this.state.users}/>
    </>
   );
